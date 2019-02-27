@@ -1,7 +1,6 @@
 ﻿namespace Problem13
 {
     using System;
-    using System.Linq;
     using System.Collections.Generic;
 
     static class Program
@@ -28,9 +27,11 @@
 
         static string LongestSubsequence(string str, int charCount)
         {
-            char[] longestSequence = new char[0];
+            int maxStart = 0;
+            int maxLength = 0;
 
-            var sequence = new LinkedList<char>();
+            int start = 0;
+            int length = 0;
             var occurances = new Dictionary<char, int>();
 
             for (int i = 0; i < str.Length; i++)
@@ -48,33 +49,32 @@
                     }
                     else
                     {
-                        FreeUpChar(sequence, occurances);
+                        // free up character
+                        char @char;
+                        do
+                        {
+                            @char = str[start];
+
+                            start++;
+                            length--;
+
+                            occurances[@char]--;
+
+                        } while (occurances[@char] != 0);
                     }
                 }
 
-                sequence.AddLast(str[i]);
+                length++;
                 occurances[str[i]]++;
 
-                if (sequence.Count > longestSequence.Length)
+                if (length > maxLength)
                 {
-                    longestSequence = sequence.ToArray();
+                    maxStart = start;
+                    maxLength = length;
                 }
             }
 
-            return new string(longestSequence);
-        }
-
-        static void FreeUpChar(LinkedList<char> sequence, Dictionary<char, int> occurances)
-        {
-            char @char;
-            do
-            {
-                @char = sequence.First.Value;
-
-                sequence.RemoveFirst();
-                occurances[@char]--;
-
-            } while (occurances[@char] != 0);
+            return str.Substring(maxStart, maxLength);
         }
     }
 }
