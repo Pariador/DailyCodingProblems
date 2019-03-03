@@ -5,18 +5,18 @@
     using System.Collections.Generic;
     using System.Linq;
 
-    static class Program
+    static class Start
     {
         static void Main(string[] args)
         {
             string fileStructure = File.ReadAllText("file_structure.txt");
-            fileStructure = fileStructure.Replace("\r\n", "\n");
-            fileStructure = fileStructure.Replace("\r", "\n");
 
             Console.WriteLine("File structure:");
             Console.WriteLine(fileStructure);
 
-            Directory dir = ParseDir(fileStructure);
+            Token[] tokens = Token.Tokenize(fileStructure);
+
+            Directory dir = ParseDir(new Queue<Token>(tokens));
 
             var paths = GetFilePaths(dir);
 
@@ -46,71 +46,29 @@
             return filePaths;
         }
 
-        static Directory ParseDir(string str)
+        static Directory ParseDir(Queue<Token> tokens)
         {
-            string[] nodes = str.Split('\n');
-
-            return ParseDir(nodes, out int end);
-        }
-
-        static Directory ParseDir(string[] nodes, out int end, int index = 0)
-        {
-            end = index;
-
-            if (index < 0 || nodes.Length <= index)
+            Token token = tokens.Dequeue();
+            if (token.IsFile)
             {
-                return null;
+                throw new ArgumentException("Token isn't a directory!");
             }
 
-            int depth = CountPreTabs(nodes[index]);
-            string name = nodes[index].Trim();
+            Directory dir = new Directory(token.Name);
 
-            Directory dir = new Directory(name);
-            if (index == nodes.Length - 1)
+            while (tokens.Any() && token.Depth < tokens.Peek().Depth)
             {
-                return dir;
-            }
-
-            for (int i = index + 1; i < nodes.Length; i++)
-            {
-                int nodeDepth = CountPreTabs(nodes[i]);
-                if (depth >= nodeDepth)
+                if (tokens.Peek().IsFile)
                 {
-                    break;
-                }
-
-                if (nodes[i].Contains('.'))
-                {
-                    dir.Files.Add(nodes[i].Trim());
+                    dir.Files.Add(tokens.Dequeue().Name);
                 }
                 else
                 {
-                    dir.Directories.Add(ParseDir(nodes, out i, i));
+                    dir.Directories.Add(ParseDir(tokens));
                 }
-
-                end = i;
             }
 
             return dir;
-        }
-
-        static int CountPreTabs(string str)
-        {
-            int count = 0;
-
-            for (int i = 0; i < str.Length; i++)
-            {
-                if (str[i] == '\t')
-                {
-                    count++;
-                }
-                else 
-                {
-                    break;
-                }
-            }
-
-            return count;
         }
 
         static string Longest(IEnumerable<string> strings)

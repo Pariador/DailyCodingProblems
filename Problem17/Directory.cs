@@ -16,5 +16,10 @@
         public List<string> Files { get; }       
 
         public List<Directory> Directories { get; }
+
+        public override string ToString()
+        {
+            return this.Name;
+        }
     }
 }
