@@ -3,27 +3,27 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem05", "Problem05\Problem05.csproj", "{B3D9ABF5-341C-4A55-8E9B-F6912D5E75D8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.Pair", "05.Pair\05.Pair.csproj", "{B3D9ABF5-341C-4A55-8E9B-F6912D5E75D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem04", "Problem04\Problem04.csproj", "{D6308FB2-E01D-46CF-A380-93B368404D8E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.FirstMissingInt", "04.FirstMissingInt\04.FirstMissingInt.csproj", "{D6308FB2-E01D-46CF-A380-93B368404D8E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem06", "Problem06\Problem06.csproj", "{0A8253D4-174D-407C-9FB5-5F8B07A324AC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.XORLinkedList", "06.XORLinkedList\06.XORLinkedList.csproj", "{0A8253D4-174D-407C-9FB5-5F8B07A324AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem03", "Problem03\Problem03.csproj", "{0C9E7642-B1AC-42F2-BE4A-9D85F8E1A9FE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.TreeSerialization", "03.TreeSerialization\03.TreeSerialization.csproj", "{0C9E7642-B1AC-42F2-BE4A-9D85F8E1A9FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem07", "Problem07\Problem07.csproj", "{61397E3F-CC34-42BA-AAC1-DE3B0B94184E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07.Decode", "07.Decode\07.Decode.csproj", "{61397E3F-CC34-42BA-AAC1-DE3B0B94184E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem09", "Problem09\Problem09.csproj", "{CC7CBD6D-3813-40E9-82F7-F6D7B58D6FFC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09.MaxSumOfSeparate", "09.MaxSumOfSeparate\09.MaxSumOfSeparate.csproj", "{CC7CBD6D-3813-40E9-82F7-F6D7B58D6FFC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem10", "Problem10\Problem10.csproj", "{BF1108A3-8EA3-48FD-9C04-54AF88F3BCD1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10.JobScheduler", "10.JobScheduler\10.JobScheduler.csproj", "{BF1108A3-8EA3-48FD-9C04-54AF88F3BCD1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem08", "Problem08\Problem08.csproj", "{9587AA46-1492-4F92-98B4-35108806EFE8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08.CountUnival", "08.CountUnival\08.CountUnival.csproj", "{9587AA46-1492-4F92-98B4-35108806EFE8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem11", "Problem11\Problem11.csproj", "{0559E5D1-E14F-4B84-8135-3AE46B8FDE0E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.Autocomplete", "11.Autocomplete\11.Autocomplete.csproj", "{0559E5D1-E14F-4B84-8135-3AE46B8FDE0E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem12", "Problem12\Problem12.csproj", "{90E7E1A0-A6AF-4AE5-913B-24D4F88B2F48}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.StaircaseClimb", "12.StaircaseClimb\12.StaircaseClimb.csproj", "{90E7E1A0-A6AF-4AE5-913B-24D4F88B2F48}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem13", "Problem13\Problem13.csproj", "{2443CA4E-AF89-4481-A6C0-14B83D18A881}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13.LongestSubstringLimited", "13.LongestSubstringLimited\13.LongestSubstringLimited.csproj", "{2443CA4E-AF89-4481-A6C0-14B83D18A881}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{67DDA813-206E-40FC-8261-9FB136DF99AA}"
 	ProjectSection(SolutionItems) = preProject
@@ -31,17 +31,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem14", "Problem14\Problem14.csproj", "{08E17984-9E41-429B-8709-5B121B068DA6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14.EstimatePi", "14.EstimatePi\14.EstimatePi.csproj", "{08E17984-9E41-429B-8709-5B121B068DA6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem01", "Problem01\Problem01.csproj", "{69E9379F-FE1F-4F19-ABF3-943A6E173BEE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.IsSumPossible", "01.IsSumPossible\01.IsSumPossible.csproj", "{69E9379F-FE1F-4F19-ABF3-943A6E173BEE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem02", "Problem02\Problem02.csproj", "{626186EE-C6DF-4E7B-B6C6-16236D1EB1FB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.ProductButOne", "02.ProductButOne\02.ProductButOne.csproj", "{626186EE-C6DF-4E7B-B6C6-16236D1EB1FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem15", "Problem15\Problem15.csproj", "{14D304E3-94F3-4DB4-8B6F-3F076997F9E1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15.RandomFromStream", "15.RandomFromStream\15.RandomFromStream.csproj", "{14D304E3-94F3-4DB4-8B6F-3F076997F9E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Program16", "Program16\Program16.csproj", "{DD7244A8-8F1A-4D05-909D-8D54F02FAD9F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "16.LogOrderIds", "16.LogOrderIds\16.LogOrderIds.csproj", "{DD7244A8-8F1A-4D05-909D-8D54F02FAD9F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem17", "Problem17\Problem17.csproj", "{9360AA81-050A-411C-90EB-C2E90DC962A8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "17.FindLongestFilePath", "17.FindLongestFilePath\17.FindLongestFilePath.csproj", "{9360AA81-050A-411C-90EB-C2E90DC962A8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
