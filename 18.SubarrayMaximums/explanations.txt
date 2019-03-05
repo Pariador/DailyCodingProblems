@@ -1,0 +1,21 @@
+﻿Solution 1: Recompute (slowest)
+Go through, each subarray and find it's maximum value.
+
+Solution 2: Insertion Sort (better)
+Using binary insertion sort, or BST, keep the elements in the window sorted.
+Sliding the window - add the new element, remove the old one, and pick the biggest one.
+
+Solutin 3: Improved Insertion Sort (best)
+Using dequeue, or a doubly linked-list, keep it sorted, while sliding the window, picking
+the biggest element for each subarray.
+
+When inserting a new value, keep the list sorted by first removing all smaller ones.
+~ They won't be needed as the new value will always be the maximum before them,
+and they will be removed before it.
+
+When removing values, remove all maximums that are out of the current window range.
+~ There might be old out of range values that havent't been removed.
+
+Resources:
+https://www.geeksforgeeks.org/sliding-window-maximum-maximum-of-all-subarrays-of-size-k/
+https://stackoverflow.com/questions/8031939/finding-maximum-for-every-window-of-size-k-in-an-array/17249084#17249084

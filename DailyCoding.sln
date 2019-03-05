@@ -43,6 +43,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "16.LogOrderIds", "16.LogOrd
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "17.FindLongestFilePath", "17.FindLongestFilePath\17.FindLongestFilePath.csproj", "{9360AA81-050A-411C-90EB-C2E90DC962A8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "18.SubarrayMaximums", "18.SubArraySum\18.SubarrayMaximums.csproj", "{A12AC2FC-B193-4585-86F5-95544BB2256C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +119,10 @@ Global
 		{9360AA81-050A-411C-90EB-C2E90DC962A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9360AA81-050A-411C-90EB-C2E90DC962A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9360AA81-050A-411C-90EB-C2E90DC962A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A12AC2FC-B193-4585-86F5-95544BB2256C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A12AC2FC-B193-4585-86F5-95544BB2256C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A12AC2FC-B193-4585-86F5-95544BB2256C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A12AC2FC-B193-4585-86F5-95544BB2256C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
