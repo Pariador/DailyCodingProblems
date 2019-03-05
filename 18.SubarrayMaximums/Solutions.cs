@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-class Solutions
+static class Solutions
 {
     // slowest
     public static int[] Recompute(int[] numbers, int subarrayLength)
