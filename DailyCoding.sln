@@ -47,6 +47,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "18.SubarrayMaximums", "18.S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "19.ColoredHouses", "19.ColoredHouses\19.ColoredHouses.csproj", "{ABD12457-F8E5-4A14-A109-6CFBB96F805C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "20.LinkedListInstersection", "20.LinkedListInstersection\20.LinkedListInstersection.csproj", "{0C29E0CA-CE43-4F97-9D9F-CA2D0EB6FEAE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -129,6 +131,10 @@ Global
 		{ABD12457-F8E5-4A14-A109-6CFBB96F805C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ABD12457-F8E5-4A14-A109-6CFBB96F805C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ABD12457-F8E5-4A14-A109-6CFBB96F805C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C29E0CA-CE43-4F97-9D9F-CA2D0EB6FEAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C29E0CA-CE43-4F97-9D9F-CA2D0EB6FEAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C29E0CA-CE43-4F97-9D9F-CA2D0EB6FEAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C29E0CA-CE43-4F97-9D9F-CA2D0EB6FEAE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
