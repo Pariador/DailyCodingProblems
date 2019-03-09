@@ -49,6 +49,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "19.ColoredHouses", "19.Colo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "20.LinkedListInstersection", "20.LinkedListInstersection\20.LinkedListInstersection.csproj", "{0C29E0CA-CE43-4F97-9D9F-CA2D0EB6FEAE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "21.MinimumRooms", "21.MinimumRooms\21.MinimumRooms.csproj", "{DFD3359B-72BC-4F3F-8738-98B0292BC703}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -135,6 +137,10 @@ Global
 		{0C29E0CA-CE43-4F97-9D9F-CA2D0EB6FEAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C29E0CA-CE43-4F97-9D9F-CA2D0EB6FEAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0C29E0CA-CE43-4F97-9D9F-CA2D0EB6FEAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFD3359B-72BC-4F3F-8738-98B0292BC703}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFD3359B-72BC-4F3F-8738-98B0292BC703}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFD3359B-72BC-4F3F-8738-98B0292BC703}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFD3359B-72BC-4F3F-8738-98B0292BC703}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
