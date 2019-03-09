@@ -5,35 +5,36 @@ using System.Text;
 
 class Program
 {
+    public const int Unvisited = -1;
+    public const int Blocked = -2;
+
     static void Main()
     {
-        bool[,] board = 
+        int[,] board = 
         {
-            { false, false, false, false },
-            { true,  true,  false, true  },
-            { false, false, false, false },
-            { false, false, false, false },
+            { Unvisited, Unvisited, Unvisited, Unvisited },
+            { Blocked,   Blocked,   Unvisited, Blocked  },
+            { Unvisited, Unvisited, Unvisited, Unvisited },
+            { Unvisited, Unvisited, Unvisited, Unvisited },
         };
 
         Position from = new Position(3, 0);
         Position to = new Position(0, 0);
 
-        int distance = ShortestPath(board, from, to, out int[,] distances);
+        int distance = ShortestPath(board, from, to);
 
         Console.WriteLine($"Shortest path: {distance}");
 
-        Print(distances, board);
+        Console.WriteLine("\nBoard:");
+        Print(board);
     }
 
-    static int ShortestPath(bool[,] board, Position from, Position to, out int[,] distances)
+    static int ShortestPath(int[,] board, Position from, Position to)
     {
-        distances = GetDistances(board.GetLength(0), board.GetLength(1));
-        distances[from.Row, from.Col] = 0;
+        board[from.Row, from.Col] = 0;
 
         var queue = new Queue<Position>();
-        var visited = new HashSet<Position>();
         queue.Enqueue(from);
-        visited.Add(from);
 
         while (queue.Any())
         {
@@ -47,81 +48,47 @@ class Program
                 new Position(current.Row, current.Col - 1),
             };
 
-            neighbors = neighbors.Where(neighbor =>
-            {
-                return 0 <= neighbor.Row && neighbor.Row < board.GetLength(0) &&
-                    0 <= neighbor.Col && neighbor.Col < board.GetLength(1) &&
-                    !board[neighbor.Row, neighbor.Col];
-            }).ToArray();
-
             foreach (var neighbor in neighbors)
             {
-                int distance = distances[current.Row, current.Col] + 1;
-
-                if (distance < distances[neighbor.Row, neighbor.Col])
-                {
-                    distances[neighbor.Row, neighbor.Col] = distance;
-                }
-
                 if 
                 (
-                    visited.Contains(neighbor)
+                    neighbor.Row < 0 || board.GetLength(0) <= neighbor.Row ||
+                    neighbor.Col < 0 || board.GetLength(1) <= neighbor.Col ||
+                    board[neighbor.Row, neighbor.Col] == Blocked ||
+                    board[neighbor.Row, neighbor.Col] != Unvisited
                 )
                 {
                     continue;
                 }
 
+                board[neighbor.Row, neighbor.Col] = board[current.Row, current.Col] + 1;
+                if (neighbor.Equals(to))
+                {
+                    return board[to.Row, to.Col];
+                }
+
                 queue.Enqueue(neighbor);
-                visited.Add(neighbor);
             }
         }
 
-        return distances[to.Row, to.Col];
+        return board[to.Row, to.Col];
     }
 
-    static int[,] GetDistances(int rows, int cols)
-    {
-        int[,] distances = new int[rows, cols];
-
-        for (int row = 0; row < rows; row++)
-        {
-            for (int col = 0; col < cols; col++)
-            {
-                distances[row, col] = int.MaxValue;
-            }
-        }
-
-        return distances;
-    }
-
-    static void Print(int[,] distances, bool[,] board)
+    static void Print(int[,] board)
     {
         const string Format = "{0:d2}";
+        const int PadLength = 3;
+        const char PadChar = ' ';
 
         StringBuilder result = new StringBuilder();
 
-        int rows = distances.GetLength(0);
-        int cols = distances.GetLength(1);
-
-        for (int row = 0; row < rows; row++)
+        for (int row = 0; row < board.GetLength(0); row++)
         {
-            int distance = distances[row, 0];
-            if (board[row, 0])
+            result.Append(string.Format(Format, board[row, 0]).PadLeft(PadLength, PadChar));
+
+            for (int col = 1; col < board.GetLength(1); col++)
             {
-                distance = -1;
-            }
-
-            result.Append(string.Format(Format, distance).PadLeft(3, ' '));
-
-            for (int col = 1; col < cols; col++)
-            {
-                distance = distances[row, col];
-                if (board[row, col])
-                {
-                    distance = -1;
-                }
-
-                result.Append(", " + string.Format(Format, distance).PadLeft(3, ' '));
+                result.Append("|" + string.Format(Format, board[row, col]).PadLeft(PadLength, PadChar));
             }
 
             result.AppendLine();
