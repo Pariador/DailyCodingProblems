@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 
 static class Program
@@ -29,42 +28,44 @@ static class Program
         return codes;
     }
 
-    // This repeats computations. Needs to be optimized.
     static int CountDecodes(string message)
     {
-        int decodesCount = 0;
+        int[] solutions = new int[message.Length + 1];
+        solutions[0] = 1;
 
         string[] codes = GetCodes();
 
-        int[] partials = { 0 };
-        List<int> next = new List<int>();
-
-        while (partials.Any())
+        for (int p = 1; p <= message.Length; p++)
         {
-            for (int p = 0; p < partials.Length; p++)
+            foreach (var code in codes)
             {
-                for (int c = 0; c < codes.Length; c++)
+                int prev = p - code.Length;
+
+                if (0 <= prev && solutions[prev] != -1 && Match(code, message, prev))
                 {
-                    int length = codes[c].Length % (message.Length - partials[p] + 1);
-
-                    string part = message.Substring(partials[p], length);
-                    if (part == codes[c])
-                    {
-                        int newPartial = partials[p] + codes[c].Length;
-                        if (newPartial >= message.Length)
-                        {
-                            decodesCount++;
-                            continue;
-                        }
-
-                        next.Add(newPartial);
-                    }
+                    solutions[p] += solutions[prev];
                 }
             }
-            partials = next.ToArray();
-            next.Clear();
         }
 
-        return decodesCount;
+        return solutions[message.Length];
+    }
+
+    static bool Match(string word, string str, int i)
+    {
+        if (i < 0 || str.Length - i < word.Length)
+        {
+            return false;
+        }
+
+        for (int w = 0; w < word.Length; w++)
+        {
+            if (word[w] != str[i + w])
+            {
+                return false;
+            }
+        }
+
+        return true;
     }
 }
