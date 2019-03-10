@@ -33,49 +33,45 @@ static class Program
 
     static string[] Reconstruct(string[] words, string str)
     {
-        var complete = new List<string>();
+        var solutions = new Dictionary<int, List<string[]>>();
+        solutions[0] = new List<string[]>();
+        solutions[0].Add(new string[0]);
 
-        var partials = new List<string[]>();
-        partials.Add(new string[0]);
-
-        var next = new List<string[]>();
-        while (partials.Any())
+        for (int p = 1; p <= str.Length; p++)
         {
-            foreach (var partial in partials)
+            foreach (var word in words)
             {
-                int partialLength = partial.Sum(word => word.Length);
+                int rest = p - word.Length;
 
-                foreach (var word in words)
+                if (!solutions.ContainsKey(rest) || !Match(word, str, rest))
                 {
-                    if (Match(word, str, partialLength))
-                    {
-                        string[] @new = partial.Concat(new string[] { word })
-                            .ToArray();
+                    continue;
+                }
 
-                        if (partialLength + word.Length == str.Length)
-                        {
-                            complete.Add(string.Join(" ", @new));
-                        }
-                        else
-                        {
-                            next.Add(@new);
-                        }
-                    }
+                if (!solutions.ContainsKey(p))
+                {
+                    solutions[p] = new List<string[]>();
+                }
+
+                foreach (var partial in solutions[rest])
+                {
+                    solutions[p].Add(partial.Concat(new string[] { word }).ToArray());
                 }
             }
-
-            var hold = partials;
-            partials = next;
-            next = hold;
-            next.Clear();
         }
 
-        return complete.ToArray();
+        if (!solutions.ContainsKey(str.Length))
+        {
+            return new string[0];
+        }
+
+        return solutions[str.Length].Select(s => string.Join(" ", s))
+            .ToArray();
     }
 
     static bool Match(string word, string str, int i)
     {
-        if (str.Length - i < word.Length)
+        if (i < 0 || str.Length - i < word.Length)
         {
             return false;
         }
