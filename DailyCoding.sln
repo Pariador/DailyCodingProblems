@@ -55,6 +55,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "22.SentenceReconstruction",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "23.MatrixShortestPath", "23.MatrixShortestPath\23.MatrixShortestPath.csproj", "{C115C409-A684-4345-8846-E204A1BB80DA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "24.LockingTree", "24.LockingTree\24.LockingTree.csproj", "{CE6CC14D-3F61-4FC0-972E-0B7DB0A1F934}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -153,6 +155,10 @@ Global
 		{C115C409-A684-4345-8846-E204A1BB80DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C115C409-A684-4345-8846-E204A1BB80DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C115C409-A684-4345-8846-E204A1BB80DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE6CC14D-3F61-4FC0-972E-0B7DB0A1F934}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE6CC14D-3F61-4FC0-972E-0B7DB0A1F934}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE6CC14D-3F61-4FC0-972E-0B7DB0A1F934}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE6CC14D-3F61-4FC0-972E-0B7DB0A1F934}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
