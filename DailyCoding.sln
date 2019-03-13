@@ -59,6 +59,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "24.LockingTree", "24.Lockin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "26.LinkedListElement", "26.LinkedListElement\26.LinkedListElement.csproj", "{5C4F3E21-8D14-4339-9D87-607CBD9DCD6D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "25.LameRegex", "25.LameRegex\25.LameRegex.csproj", "{F80897C2-6724-4613-9284-6EFD38549DE5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -165,6 +167,10 @@ Global
 		{5C4F3E21-8D14-4339-9D87-607CBD9DCD6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C4F3E21-8D14-4339-9D87-607CBD9DCD6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C4F3E21-8D14-4339-9D87-607CBD9DCD6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F80897C2-6724-4613-9284-6EFD38549DE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F80897C2-6724-4613-9284-6EFD38549DE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F80897C2-6724-4613-9284-6EFD38549DE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F80897C2-6724-4613-9284-6EFD38549DE5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
