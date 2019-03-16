@@ -9,7 +9,8 @@ static class Program
             new int[] { 2, 1, 2 },
             new int[] { 3, 0, 1, 3, 0, 5 },
             new int[] { 3, 0, 0, 2, 0, 4 },
-            new int[] { 3, 0, 0, 2, 0, 4, 0, 2, 0, 0, 3 }
+            new int[] { 3, 0, 0, 2, 0, 5, 0, 3, 0, 0, 4 },
+            new int[] { 0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1 }
         };
 
         foreach (var map in maps)
@@ -25,93 +26,35 @@ static class Program
     static int Rain(int[] map)
     {
         int rain = 0;
-        int i = 0;
-        while (i < map.Length)
+
+        int leftMax = map[0];
+        int rightMax = map[map.Length - 1];
+
+        int left = 1;
+        int right = map.Length - 2;
+
+        while (left <= right)
         {
-            int decline = FindDecline(map, i);
-            if (decline == -1)
+            if (leftMax < rightMax)
             {
-                break;
-            }
+                if (leftMax < map[left])
+                    leftMax = map[left];
+                else
+                    rain += leftMax - map[left];
 
-            int end = FindNextClosestPeek(map, decline);
-            if (end == -1)
+                left++;
+            }
+            else
             {
-                break;
+                if (rightMax < map[right])
+                    rightMax = map[right];
+                else
+                    rain += rightMax - map[right];
+
+                right--;
             }
-
-
-            int max = Math.Min(map[decline], map[end]);
-
-            for (int j = decline + 1; j < end; j++)
-            {
-                rain += max - map[j];
-            }
-
-            i = end;
         }
 
         return rain;
-    }
-
-    static int FindDecline(int[] map, int start)
-    {
-        for (int i = start; i < map.Length - 2; i++)
-        {
-            if (map[i] > map[i + 1])
-            {
-                return i;
-            }
-        }
-
-        return -1;
-    }
-
-    static int FindIncline(int[] map, int start)
-    {
-        for (int i = start; i < map.Length - 1; i++)
-        {
-            if (map[i] < map[i + 1])
-            {
-                return i;
-            }
-        }
-
-        return -1;
-    }
-
-    static int FindInclineEnd(int[] map, int start)
-    {
-        int i = start;
-
-        while (i < map.Length - 1 && map[i] < map[i + 1])
-            i++;
-
-        return i;
-    }
-
-    static int FindNextClosestPeek(int[] map, int start)
-    {
-        if (map.Length - 1 <= start)
-        {
-            return -1;
-        }
-
-        int next = start + 1;
-
-        for (int i = start + 2; i < map.Length; i++)
-        {
-            if (map[next] < map[i])
-            {
-                next = i;
-            }
-
-            if (map[start] <= map[next])
-            {
-                break;
-            }
-        }
-
-        return next;
     }
 }
