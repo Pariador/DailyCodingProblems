@@ -71,6 +71,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "30.Rain", "30.Rain\30.Rain.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "31.MED", "31.MED\31.MED.csproj", "{2C760B5C-4D28-4009-BBF2-5B5AC8B69200}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "33.RunningMedian", "33.RunningMedian\33.RunningMedian.csproj", "{51FC23A8-5B89-435A-8A65-489F9F0C7A85}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -201,6 +203,10 @@ Global
 		{2C760B5C-4D28-4009-BBF2-5B5AC8B69200}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C760B5C-4D28-4009-BBF2-5B5AC8B69200}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C760B5C-4D28-4009-BBF2-5B5AC8B69200}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51FC23A8-5B89-435A-8A65-489F9F0C7A85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51FC23A8-5B89-435A-8A65-489F9F0C7A85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51FC23A8-5B89-435A-8A65-489F9F0C7A85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51FC23A8-5B89-435A-8A65-489F9F0C7A85}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
