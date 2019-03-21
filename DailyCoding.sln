@@ -75,6 +75,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "33.RunningMedian", "33.Runn
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "34.ShortestPalindrome", "34.ShortestPalindrome\34.ShortestPalindrome.csproj", "{A1C39B1F-5D28-4136-89CC-C427D9D13F94}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "35.SortColors", "35.SortColors\35.SortColors.csproj", "{7E1D2576-7A7C-41BE-AACB-3731606CED47}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -213,6 +215,10 @@ Global
 		{A1C39B1F-5D28-4136-89CC-C427D9D13F94}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1C39B1F-5D28-4136-89CC-C427D9D13F94}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1C39B1F-5D28-4136-89CC-C427D9D13F94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E1D2576-7A7C-41BE-AACB-3731606CED47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E1D2576-7A7C-41BE-AACB-3731606CED47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E1D2576-7A7C-41BE-AACB-3731606CED47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E1D2576-7A7C-41BE-AACB-3731606CED47}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
