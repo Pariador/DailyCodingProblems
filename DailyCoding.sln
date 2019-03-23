@@ -79,6 +79,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "35.SortColors", "35.SortCol
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "36.BSTSecondLargest", "36.BSTSecondLargest\36.BSTSecondLargest.csproj", "{DBC97B5B-6870-4CB1-B20C-9CB05AF2378F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "37.PowerSet", "37.PowerSet\37.PowerSet.csproj", "{00609C39-2342-4EAB-B77C-81A1948DE307}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -225,6 +227,10 @@ Global
 		{DBC97B5B-6870-4CB1-B20C-9CB05AF2378F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DBC97B5B-6870-4CB1-B20C-9CB05AF2378F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DBC97B5B-6870-4CB1-B20C-9CB05AF2378F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00609C39-2342-4EAB-B77C-81A1948DE307}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00609C39-2342-4EAB-B77C-81A1948DE307}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00609C39-2342-4EAB-B77C-81A1948DE307}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00609C39-2342-4EAB-B77C-81A1948DE307}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
