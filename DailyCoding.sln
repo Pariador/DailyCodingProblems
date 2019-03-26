@@ -83,6 +83,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "37.PowerSet", "37.PowerSet\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "39.GameOfLife", "39.GameOfLife\39.GameOfLife.csproj", "{EA5F8658-3B58-4B7E-8044-AE79A2A441DA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "40.FindSingle", "40.FindSingle\40.FindSingle.csproj", "{665AA913-6EC7-4522-89A5-11885115BAD9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -237,6 +239,10 @@ Global
 		{EA5F8658-3B58-4B7E-8044-AE79A2A441DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA5F8658-3B58-4B7E-8044-AE79A2A441DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA5F8658-3B58-4B7E-8044-AE79A2A441DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{665AA913-6EC7-4522-89A5-11885115BAD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{665AA913-6EC7-4522-89A5-11885115BAD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{665AA913-6EC7-4522-89A5-11885115BAD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{665AA913-6EC7-4522-89A5-11885115BAD9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
