@@ -85,6 +85,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "39.GameOfLife", "39.GameOfL
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "40.FindSingle", "40.FindSingle\40.FindSingle.csproj", "{665AA913-6EC7-4522-89A5-11885115BAD9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "41.Itinerary", "41.Itinerary\41.Itinerary.csproj", "{E7AC5070-1805-422B-8EEF-727549B0A3CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "42.SubsetSum", "42.SubsetSum\42.SubsetSum.csproj", "{CBD1ED4D-A5DB-41D7-9742-892671AFC0FC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -243,6 +247,14 @@ Global
 		{665AA913-6EC7-4522-89A5-11885115BAD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{665AA913-6EC7-4522-89A5-11885115BAD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{665AA913-6EC7-4522-89A5-11885115BAD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7AC5070-1805-422B-8EEF-727549B0A3CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7AC5070-1805-422B-8EEF-727549B0A3CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7AC5070-1805-422B-8EEF-727549B0A3CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7AC5070-1805-422B-8EEF-727549B0A3CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBD1ED4D-A5DB-41D7-9742-892671AFC0FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBD1ED4D-A5DB-41D7-9742-892671AFC0FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBD1ED4D-A5DB-41D7-9742-892671AFC0FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBD1ED4D-A5DB-41D7-9742-892671AFC0FC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
