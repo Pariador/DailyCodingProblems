@@ -89,7 +89,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "41.Itinerary", "41.Itinerar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "42.SubsetSum", "42.SubsetSum\42.SubsetSum.csproj", "{CBD1ED4D-A5DB-41D7-9742-892671AFC0FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "43.MaxHeap", "43.Heap\43.MaxHeap.csproj", "{C17E4D3A-0F4E-4B7D-B4AF-47C7B8D6DAB0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "43.MaxHeap", "..\study\programming\practice\DailyCoding\43.MaxHeap\43.MaxHeap.csproj", "{C17E4D3A-0F4E-4B7D-B4AF-47C7B8D6DAB0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
