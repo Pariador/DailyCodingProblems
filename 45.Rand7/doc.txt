@@ -1,0 +1,6 @@
+﻿Using a function rand5() that returns an integer from 1 to 5 (inclusive) with uniform probability,
+implement a function rand7() that returns an integer from 1 to 7 (inclusive).
+
+Resources:
+https://www.geeksforgeeks.org/generate-integer-from-1-to-7-with-equal-probability/
+https://stackoverflow.com/questions/137783/expand-a-random-range-from-1-5-to-1-7

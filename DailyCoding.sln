@@ -89,7 +89,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "41.Itinerary", "41.Itinerar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "42.SubsetSum", "42.SubsetSum\42.SubsetSum.csproj", "{CBD1ED4D-A5DB-41D7-9742-892671AFC0FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "43.MaxHeap", "..\study\programming\practice\DailyCoding\43.MaxHeap\43.MaxHeap.csproj", "{C17E4D3A-0F4E-4B7D-B4AF-47C7B8D6DAB0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "43.MaxHeap", "43.MaxHeap\43.MaxHeap.csproj", "{C17E4D3A-0F4E-4B7D-B4AF-47C7B8D6DAB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "45.Rand7", "45.Rand7\45.Rand7.csproj", "{2A089814-7BCB-4599-B37A-392FC1D827F1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -261,6 +263,10 @@ Global
 		{C17E4D3A-0F4E-4B7D-B4AF-47C7B8D6DAB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C17E4D3A-0F4E-4B7D-B4AF-47C7B8D6DAB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C17E4D3A-0F4E-4B7D-B4AF-47C7B8D6DAB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A089814-7BCB-4599-B37A-392FC1D827F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A089814-7BCB-4599-B37A-392FC1D827F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A089814-7BCB-4599-B37A-392FC1D827F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A089814-7BCB-4599-B37A-392FC1D827F1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
